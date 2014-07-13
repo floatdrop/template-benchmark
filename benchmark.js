@@ -1,6 +1,7 @@
 var data = require('./data');
 
 var count = 100000;
+var bh = require('./bh/bh.js');
 var ect = require('./ect/ect.js');
 var ejs = require('./ejs/ejs.js');
 var ejsWithoutWith = require('./ejs-without-with/ejs.js');
@@ -56,6 +57,7 @@ var testUnescaped = function(name, sample, cb) {
 var samples = [
 
 	{ name : 'Jade', sample : jade },
+	{ name : 'BH', sample : bh },
 	{ name : 'CoffeeKup', sample : coffeekup },
 	{ name : 'Jade without `with`', sample : jadeWithoutWith },
 	{ name : 'Handlebars.js', sample : handlebars },
